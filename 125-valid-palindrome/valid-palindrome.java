@@ -6,11 +6,11 @@ class Solution {
         while(l<r){
             while(l<r && !Character.isLetterOrDigit(s.charAt(l))){
                 l++;
-                continue;
+                
             }
             while(l<r && !Character.isLetterOrDigit(s.charAt(r))){
                 r--;
-                continue;
+                
             }
             if(Character.toLowerCase(s.charAt(l)) != Character.toLowerCase(s.charAt(r))){
                 return false;
